@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\CYP\KSWB.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{37EFE7C8-D854-4335-8622-AB8E6007A0EE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>KSWB</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExcelLibrary">
+      <HintPath>D:\ChromeDownloads\ExcelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data" />
+    <Reference Include="NPlot">
+      <HintPath>lib\NPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataGridViewPrinter.cs" />
+    <Compile Include="CWY\ResultLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CWY\InputCost.cs" />
+    <Compile Include="CWY\CropInput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CWY\Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CWY\Soil.cs" />
+    <Compile Include="CWY\LocationData.cs" />
+    <Compile Include="CWY\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CWY\Result.cs" />
+    <Compile Include="CWY\Program.cs" />
+    <Compile Include="CWY\SaveOutputToExcelHander.cs" />
+    <Compile Include="CWY\UnitsChangedHandler.cs" />
+    <Compile Include="CWY\Crop.cs" />
+    <Compile Include="CWY\MajorValueUpdateHandler.cs" />
+    <Compile Include="CWY\UnitsChangedUpdateHandler.cs" />
+    <Compile Include="CWY\CWYModel.cs" />
+    <Compile Include="CWY\CropResults.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CWY\TabChangedHandler.cs" />
+    <Compile Include="CWY\RestartWithResultsHandler.cs" />
+    <Compile Include="CWY\Measurement.cs" />
+    <Compile Include="CWY\TabControlEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CWY\PreRemoveTab.cs" />
+    <Compile Include="CWY\Properties\Settings.cs" />
+    <Compile Include="KSWB\CropInput.cs" />
+    <Compile Include="KSWB\TestControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KSWB\CustomDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="KSWB\Properties\Settings.cs" />
+    <Compile Include="KSWB\Properties\Resources.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CWY\CropInput.resx" />
+    <EmbeddedResource Include="CWY\CropResults.resx" />
+    <EmbeddedResource Include="CWY\frmMain.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CWY\Start.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KSWB\CustomDataGridView.resx" />
+    <EmbeddedResource Include="KSWB\NPlot.dll" />
+    <EmbeddedResource Include="KSWB\Properties\Resources.resx" />
+    <EmbeddedResource Include="KSWB\Resources\check.gif" />
+    <EmbeddedResource Include="KSWB\Resources\crops\alfalfa.csv" />
+    <EmbeddedResource Include="KSWB\Resources\crops\corn.csv" />
+    <EmbeddedResource Include="KSWB\Resources\crops\sorghum.csv" />
+    <EmbeddedResource Include="KSWB\Resources\crops\soybean.csv" />
+    <EmbeddedResource Include="KSWB\Resources\crops\sunflower.csv" />
+    <EmbeddedResource Include="KSWB\Resources\crops\wheat.csv" />
+    <EmbeddedResource Include="KSWB\Resources\inputs\alfalfa.csv" />
+    <EmbeddedResource Include="KSWB\Resources\inputs\corn.csv" />
+    <EmbeddedResource Include="KSWB\Resources\inputs\sorghum.csv" />
+    <EmbeddedResource Include="KSWB\Resources\inputs\soybean.csv" />
+    <EmbeddedResource Include="KSWB\Resources\inputs\sunflower.csv" />
+    <EmbeddedResource Include="KSWB\Resources\inputs\wheat.csv" />
+    <EmbeddedResource Include="KSWB\Resources\locations\burlington.csv" />
+    <EmbeddedResource Include="KSWB\Resources\locations\colby.csv" />
+    <EmbeddedResource Include="KSWB\Resources\locations\dodgecity.csv" />
+    <EmbeddedResource Include="KSWB\Resources\locations\gardencity.csv" />
+    <EmbeddedResource Include="KSWB\Resources\locations\tribune.csv" />
+    <EmbeddedResource Include="KSWB\Resources\locations\ulysses.csv" />
+    <EmbeddedResource Include="KSWB\Resources\soils.csv" />
+    <EmbeddedResource Include="KSWB\TestControl.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Karnataka.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mandya.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ramanagara.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\udupi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bangalore-urban.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kundapura.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uttarpradesh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\andhrapradesh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\haryana.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\madhyapradesh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maharashtra.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\punjab.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

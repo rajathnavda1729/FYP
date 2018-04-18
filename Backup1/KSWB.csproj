@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\CYP\KSWB.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{37EFE7C8-D854-4335-8622-AB8E6007A0EE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>KSWB</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data" />
+    <Reference Include="NPlot">
+      <HintPath>lib\NPlot.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataGridViewPrinter.cs" />
+    <Compile Include="CWY\ResultLine.cs" />
+    <Compile Include="CWY\InputCost.cs" />
+    <Compile Include="CWY\CropInput.cs" />
+    <Compile Include="CWY\Start.cs" />
+    <Compile Include="CWY\Soil.cs" />
+    <Compile Include="CWY\LocationData.cs" />
+    <Compile Include="CWY\frmMain.cs" />
+    <Compile Include="CWY\Result.cs" />
+    <Compile Include="CWY\Program.cs" />
+    <Compile Include="CWY\SaveOutputToExcelHander.cs" />
+    <Compile Include="CWY\UnitsChangedHandler.cs" />
+    <Compile Include="CWY\Crop.cs" />
+    <Compile Include="CWY\MajorValueUpdateHandler.cs" />
+    <Compile Include="CWY\UnitsChangedUpdateHandler.cs" />
+    <Compile Include="CWY\CWYModel.cs" />
+    <Compile Include="CWY\CropResults.cs" />
+    <Compile Include="CWY\TabChangedHandler.cs" />
+    <Compile Include="CWY\RestartWithResultsHandler.cs" />
+    <Compile Include="CWY\Measurement.cs" />
+    <Compile Include="CWY\TabControlEx.cs" />
+    <Compile Include="CWY\PreRemoveTab.cs" />
+    <Compile Include="CWY\Properties\Settings.cs" />
+    <Compile Include="KSWB\CropInput.cs" />
+    <Compile Include="KSWB\TestControl.cs" />
+    <Compile Include="KSWB\CustomDataGridView.cs" />
+    <Compile Include="KSWB\Properties\Settings.cs" />
+    <Compile Include="KSWB\Properties\Resources.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CWY\CropInput.resx" />
+    <EmbeddedResource Include="CWY\CropResults.resx" />
+    <EmbeddedResource Include="CWY\frmMain.resx" />
+    <EmbeddedResource Include="CWY\Start.resx" />
+    <EmbeddedResource Include="KSWB\CustomDataGridView.resx" />
+    <EmbeddedResource Include="KSWB\NPlot.dll" />
+    <EmbeddedResource Include="KSWB\Properties\Resources.resx" />
+    <EmbeddedResource Include="KSWB\Resources\check.gif" />
+    <EmbeddedResource Include="KSWB\Resources\crops\alfalfa.csv" />
+    <EmbeddedResource Include="KSWB\Resources\crops\corn.csv" />
+    <EmbeddedResource Include="KSWB\Resources\crops\sorghum.csv" />
+    <EmbeddedResource Include="KSWB\Resources\crops\soybean.csv" />
+    <EmbeddedResource Include="KSWB\Resources\crops\sunflower.csv" />
+    <EmbeddedResource Include="KSWB\Resources\crops\wheat.csv" />
+    <EmbeddedResource Include="KSWB\Resources\inputs\alfalfa.csv" />
+    <EmbeddedResource Include="KSWB\Resources\inputs\corn.csv" />
+    <EmbeddedResource Include="KSWB\Resources\inputs\sorghum.csv" />
+    <EmbeddedResource Include="KSWB\Resources\inputs\soybean.csv" />
+    <EmbeddedResource Include="KSWB\Resources\inputs\sunflower.csv" />
+    <EmbeddedResource Include="KSWB\Resources\inputs\wheat.csv" />
+    <EmbeddedResource Include="KSWB\Resources\locations\burlington.csv" />
+    <EmbeddedResource Include="KSWB\Resources\locations\colby.csv" />
+    <EmbeddedResource Include="KSWB\Resources\locations\dodgecity.csv" />
+    <EmbeddedResource Include="KSWB\Resources\locations\gardencity.csv" />
+    <EmbeddedResource Include="KSWB\Resources\locations\tribune.csv" />
+    <EmbeddedResource Include="KSWB\Resources\locations\ulysses.csv" />
+    <EmbeddedResource Include="KSWB\Resources\soils.csv" />
+    <EmbeddedResource Include="KSWB\TestControl.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

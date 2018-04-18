@@ -1,0 +1,32 @@
+Label,Name,Amount,Factor,Units,FactorUnits
+__Irrigation
+Total Season Pumping Hours,totalhours,1800,,hours,,
+Pumping Water Lift,lift,120,,feet,,
+Irrigation System Operating Pressure,psi,35,,psi,,
+Labor,labor,10,totalhours,$,hour
+Repairs and Maintenance,repairs,0.33,,$,ac-in
+__General
+Nitrogen,n,,acres,lb,acre
+Nitrogen Cost,nc,0.39,n,$,lb
+Phosphorus,p,,acres,lb,acre
+Phosphorus Cost,pc,0.44,p,$,lb
+Seed,s,,acres,lb,acre
+Seed Cost,sc,0.13,s,$,lb
+Herbicide,herbicide,13.21,acres,$,acre
+Insecticide,insecticide,0.00,acres,$,acre
+__Operation
+Tillage Cost,tillage_cost,25.48,acres,$,acre
+Planting Cost,planting_cost,9.69,acres,$,acre
+Fertilizer Application Cost,fertilizer_application_cost,4.43,acres,$,acre
+Insecticide Application Cost,iac,4.34,acres,$,acre
+Herbicide Application Cost,hac,4.38,acres,$,acre
+Harvest Base Charge,base,18.92,acres,$,acre
+Maximum yield before additional charge,xtrayield,21,,bu,,
+Extra charge for yields exceeding,xtra,0.173,xtrayield,$,bu
+Hauling,haul,0.144,yield,$,bu
+Harvest Flat Rate,flat,,yield,$,bu
+__Returns
+Misc Returns,returns1,,acres,$,acre
+__Costs
+Crop Insurance,insurance,,acres,$,acre
+Misc Costs,returns2,,acres,$,acre
