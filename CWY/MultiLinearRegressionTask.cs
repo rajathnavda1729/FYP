@@ -45,7 +45,7 @@ namespace CWY
             labelsAndWeights.Add("SoilWatFieldCapacity", weights[1]);
             labelsAndWeights.Add("Swawp", weights[2]);
             labelsAndWeights.Add("SoilWaterStorage", weights[2]);
-            labelsAndWeights.Add("IrrigationEfficiency", weights[3]);
+            labelsAndWeights.Add("IrrigationEfficiency", weights[3]);  
             labelsAndWeights.Add("MaxYield", weights[4]);
             labelsAndWeights.Add("GrossIrrig", weights[5]);
             labelsAndWeights.Add("InputCosts", weights[6]);

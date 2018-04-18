@@ -50,6 +50,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="alglibnet2">
+      <HintPath>D:\ChromeDownloads\alglib-3.13.0.csharp.gpl\csharp\net-core\alglibnet2.dll</HintPath>
+    </Reference>
     <Reference Include="ExcelLibrary">
       <HintPath>D:\ChromeDownloads\ExcelLibrary.dll</HintPath>
     </Reference>
@@ -63,6 +66,8 @@
     <Reference Include="System.XML" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CWY\MultiLinearRegressionTask.cs" />
+    <Compile Include="CWY\Sample.cs" />
     <Compile Include="DataGridViewPrinter.cs" />
     <Compile Include="CWY\ResultLine.cs">
       <SubType>UserControl</SubType>
